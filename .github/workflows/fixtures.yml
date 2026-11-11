@@ -17,3 +17,9 @@ jobs:
           sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 update -qq && sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 install -y -qq poppler-utils fonts-dejavu-core
       - run: pip install "pillow>=10"
       - run: python3 scripts/fixtures/verify_corpus.py
+      - name: load-file example + validator (positive and negative)
+        run: |
+          python3 scripts/loadfiles/render_example.py /tmp/vol && python3 scripts/loadfiles/validate_dat_opt.py /tmp/vol/VOL001.dat /tmp/vol/VOL001.opt
+          cmp /tmp/vol/VOL001.dat docs/spec/loadfiles/examples/VOL001/VOL001.dat && cmp /tmp/vol/VOL001.opt docs/spec/loadfiles/examples/VOL001/VOL001.opt
+          printf 'DM1,VOL001,.\\x.tif,Y,,,2\r\nDM1,VOL001,.\\y.tif,N,,3,\r\n' > /tmp/bad.opt
+          ! python3 scripts/loadfiles/validate_dat_opt.py /tmp/vol/VOL001.dat /tmp/bad.opt
