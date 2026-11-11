@@ -9,12 +9,18 @@ Updated: 2026-11-11 (session 1). Read `PROGRAM.md` then `BACKLOG.md` before acti
   Answer Center mirrors). If the machine is gone, rebuild with
   `scripts/research/fetch-public-docs.sh` and the wget commands in
   `docs/research/environment.md`; the mirrors are public sites.
-- Open blockers: BLK-001 (CloudNine installers), BLK-002 (ReadySuite installer) — both need
-  Jack's authorization to submit vendor forms. BLK-003/004 follow from them.
+- Jack (2026-11-11) authorized acquiring binaries from the open internet. LAW 7.14 and
+  Concordance 10 installers were found as direct links on CloudNine's own download page and
+  are in the private workspace (`acq/installers/`, see artifact catalog ART-110…113).
+  Remaining: activation key to *launch* (BLK-001), ReadySuite installer (BLK-002, form-only),
+  Windows VM (BLK-003, now justified: provision next).
 
 ## Exact next action
 
-1. Finish Answer Center mirrors; generate per-file sha256 manifests in the private
+0. Hash the remaining installers; run REA `inspect-desktop-application`/`inspect-artifact`
+   on `LAW_7.14.290.exe` and the Concordance installer (output stays in private
+   `raw-analysis/`); publish only sanitized component/version inventory.
+1. Finish Answer Center mirrors (done: 609 + 458 files, manifests in private workspace); generate per-file sha256 manifests in the private
    workspace; publish topic indexes (RT-003).
 2. Start RT-005/RT-007 reading (LAW export topics `exporting.htm`, `concordance2.htm`,
    `export_utility_overview.htm`; Concordance `managing-data-files.htm`, import topics) and

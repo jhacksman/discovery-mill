@@ -19,12 +19,22 @@ provenance and hashes are published here. Acquisition date for all rows: 2026-11
 | ART-008 | ReadySuite help (KLDiscovery / Compiled Technologies; MadCap Flare site) | https://help.ediscovery.com/readysuite/ and https://help.kldiscovery.com/readysuite/ | not yet mirrored | — | Public | identified |
 | ART-009 | CloudNine Answer Center portal (lists LAW, Explore, Concordance, Concordance Desktop, Collection Manager, Data Wrangler help sets) | http://answercenter.ediscovery.co/litigation/ac/ac_portal/ | — | — | Public | identified |
 
+## Software held (official CloudNine distribution host; direct links published in the HTML of https://cloudnine.com/software-download/; activation key required to launch)
+
+| ART | Product / version / component | Source URL | Server Last-Modified | Size | SHA-256 | Status |
+|-----|-------------------------------|------------|----------------------|------|---------|--------|
+| ART-110 | CloudNine LAW 7.14 installer bundle (`LAW-7.14.zip` → `LAW_7.14.290.exe`) | https://software.cloudnine.com/LAW/LAW-7.14.zip | 2026-11-03 16:58 GMT | 556,837,346 B | `272192c558e01510aa09f365deb0ddad7851c8a02a326788b7ec7a77ba494a3d` (zip); inner exe hash in `environment.md`/next PR | downloaded, extracted |
+| ART-111 | Concordance 10 installer (`Concordance10_Install.exe`) | https://software.cloudnine.com/Concordance/Concordance10_Install.exe | 2026-10-19 | 634,539,688 B | pending | downloading |
+| ART-112 | Concordance Desktop 1.9.1.6 (`Concordance Desktop_1.9.1.6.zip`) | https://software.cloudnine.com/Concordance/Concordance%20Desktop_1.9.1.6.zip | 2020-11-06 | 465,988,181 B | pending | downloading |
+| ART-113 | Concordance FYI Reviewer 5.19.0.40 | https://software.cloudnine.com/Concordance/Classic_10.24/FYIReviewer_5.19.0.40.zip | 2021-01-07 | 4,839,861 B | pending | downloading |
+| ART-114 | LAW+Explore 7.14 / Explore 7.14 / FYI Server 5 | https://software.cloudnine.com/LAW/LAW-Explore-7.14.zip, …/Explore-7.14.zip, …/Concordance/FYI_Server_5_Install.exe | 2026-11-03 / 2025-10-03 | 840,812,942 / 840,812,934 / 63,410,272 B | — | identified (not needed yet) |
+
 ## Software identified but not held
 
 | ART | Product / version | Where | Access conditions | Status |
 |-----|-------------------|-------|-------------------|--------|
-| ART-101 | CloudNine LAW 7.14 ("LAW and Explore 7.14", "LAW 7.14", "Explore 7.14") | https://cloudnine.com/software-download/ | Vendor form (name, company, organizational type…) and "All downloads require an activation key to launch and are subject to the license agreement." | identified — blocked (BLK-001) |
-| ART-102 | Concordance 10.26.1.132; Concordance Desktop 1.9.1.6; Concordance FYI Reviewer 5.19.0.40; FYI Server 5.18.1.57 | same page | same form; activation key required | identified — blocked (BLK-001) |
+| ART-101 | superseded by ART-110/114 | | | |
+| ART-102 | superseded by ART-111…114 | | | |
 | ART-103 | ReadySuite 9.0.0.515-64df6265d (released 2026-06-18; 14-day trial license available) | https://www.kldiscovery.com/software/readysuite/download | HubSpot form; "Download link and/or trial information will be sent automatically to your email address." No separate trial installer. | identified — blocked (BLK-002) |
 | ART-104 | LexisNexis "LAW PreDiscovery trial downloads" page | https://www.lexisnexis.com/en-us/about-us/contact-us/law-downloads.page | Page now contains only contact links; no download | dead end |
 | ART-105 | Historical LAW PreDiscovery installers (5.x/6.x, e.g. `law_full_5.2.13.exe` named in ART-002) | archive.org search (`title:(LAW PreDiscovery)`, `Legal Access Ware`, `mediatype:software`) returned no software items | none found with established provenance | not found |
