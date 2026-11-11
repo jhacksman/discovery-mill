@@ -17,7 +17,8 @@ Updated: 2026-11-11 (session 1). Read `PROGRAM.md` then `BACKLOG.md` before acti
 
 ## Exact next action
 
-0. Hash the remaining installers; run REA `inspect-desktop-application`/`inspect-artifact`
+0. DONE 2026-11-11: all four installers hashed, extracted (7-Zip/unshield), REA `inspect-artifact`/`inspect-managed-artifact` run; private NOTES-session1.md holds component inventory. NEXT: write sanitized findings (LAW/Concordance component + dependency inventory, LAW case-schema entity list, Concordance sample DB/template formats) under docs/research/findings/, then PR 2 (artifact catalog + findings).
+0a. (superseded) run REA `inspect-desktop-application`/`inspect-artifact`
    on `LAW_7.14.290.exe` and the Concordance installer (output stays in private
    `raw-analysis/`); publish only sanitized component/version inventory.
 1. Finish Answer Center mirrors (done: 609 + 458 files, manifests in private workspace); generate per-file sha256 manifests in the private
