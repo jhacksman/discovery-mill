@@ -21,4 +21,4 @@ published.
 | EV-012 | Static artifact inspection | LAW 7.14 schema-manager assembly: embedded case-schema resources (entity/field names only published) | ART-110 | private | Finding F-003; script text not published |
 | EV-013 | Static artifact inspection | Concordance 10.26.1.153 setup: extracted component list, sample database file set, shipped field templates | ART-111 | private | Finding F-002; 17/364 entries not extracted |
 | EV-014 | Static artifact inspection | Concordance Desktop 1.9.1.6 / FYI Reviewer 5.19.0.40: hashes and signer metadata only | ART-112/113 | private | Low relevance; not analysed further |
-
+| EV-015 | Vendor help page | LAW Answer Center *Field Descriptions – LAW* (system field table with Table/Type columns) | ART-006 | mirrored | Resolves type family for codes 8 and 11 (F-003) |

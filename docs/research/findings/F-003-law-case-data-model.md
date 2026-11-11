@@ -19,7 +19,7 @@ Management database (separate): case registry and project registry.
 
 ## Documented field type codes (DOCUMENTED, LAW 6.2.46 UG)
 
-`0` Text (≤255 chars, page or document) · `1` Auto-Increment · `2` List · `3` Memo (document only; not indexable) · `4` Date (mm/dd/yyyy) · `5` Numeric (int32) · `6` Tag (Y/N) · `7` Tiny Int. Codes `8`, `10`, `11` appear in 7.14 field definitions but are not described in the 6.2 guide — **UNKNOWN** (observed uses: 8 = long text such as ThreadID/Language/IMEI; 10 = foreign-key ids; 11 = file size).
+`0` Text (≤255 chars, page or document) · `1` Auto-Increment · `2` List · `3` Memo (document only; not indexable) · `4` Date (mm/dd/yyyy) · `5` Numeric (int32) · `6` Tag (Y/N) · `7` Tiny Int. Codes `8`, `10`, `11` appear in 7.14 field definitions but are not in the 6.2 chart. Cross-referencing the LAW 7.x Answer Center *Field Descriptions* table (EV-015): fields with code `11` are described as **BigInt** (Filesize) — DOCUMENTED; fields with code `8` (ThreadID, IsRedacted, Language) are described as **Text** — DOCUMENTED type family, so `8` is INFERRED to be a second text storage variant (Unicode/long text); code `10` occurs only on reference ids (CustodianID, EDSessionID, EDSourceID, EDFolderID, TimeZoneID, ImportSetId) that the *Field Descriptions* page does not list — **UNKNOWN**, INFERRED to be an integer reference type. Code `7` (Tiny Int) covers the per-stage `_PS_*` flags, FileAccuracy, DateSource, _DupMethod, _FTIndex.
 
 ## System / ED field catalog (OBSERVED names; type per code above)
 
