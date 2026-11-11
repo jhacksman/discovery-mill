@@ -4,7 +4,7 @@ Updated: 2026-11-11 (session 1). Read `PROGRAM.md` then `BACKLOG.md` before acti
 
 ## State
 
-- Branch/PR: PR #1 `devin/1794403948-research-foundation` (M0) submitted, not merged. PR 2 `devin/1794403948-installer-findings` (stacked on PR #1) adds findings F-001..F-003 + EV-011..014. Nothing merged yet.
+- Branch/PR: PR #1 `devin/1794403948-research-foundation` (M0) submitted, not merged. PR 2 `devin/1794403948-installer-findings` (stacked on PR #1) adds findings F-001..F-003 + EV-011..014. PR #3 `devin/1794403948-fixtures-harness` (base main, independent) adds fixture corpus + verifier + CI. Nothing merged yet.
 - Private workspace on the research machine: `~/discovery-mill-private/` (REA env, PDFs,
   Answer Center mirrors). If the machine is gone, rebuild with
   `scripts/research/fetch-public-docs.sh` and the wget commands in
@@ -17,6 +17,7 @@ Updated: 2026-11-11 (session 1). Read `PROGRAM.md` then `BACKLOG.md` before acti
 
 ## Exact next action
 
+0b. DONE 2026-11-11: PR #2 findings F-001..F-003 and PR #3 fixtures submitted. NEXT (PR 4, branch from main): docs/spec/loadfiles/ — DAT/OPT contract (delimiters 0x14/0xFE/0xAE, UCS-2/UTF-8 BOM rules, 12-char field names, OPT 7-field lines, Y breaks, path notation) with worked examples generated from fixtures/corpus by scripts/loadfiles/render_example.py, plus scripts/loadfiles/validate_dat_opt.py; cite EV-004/005 + F-002 templates; then PR 5 imaging/text contract (F-001/F-003), PR 6 exceptions/QC, PR 7 handoff.
 0. DONE 2026-11-11: all four installers hashed, extracted (7-Zip/unshield), REA `inspect-artifact`/`inspect-managed-artifact` run; private NOTES-session1.md holds component inventory. NEXT: write sanitized findings (LAW/Concordance component + dependency inventory, LAW case-schema entity list, Concordance sample DB/template formats) under docs/research/findings/, then PR 2 (artifact catalog + findings).
 0a. (superseded) run REA `inspect-desktop-application`/`inspect-artifact`
    on `LAW_7.14.290.exe` and the Concordance installer (output stays in private
