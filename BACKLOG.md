@@ -23,7 +23,7 @@ reviewed / merged / blocked / verified.
 | RQ-S03 | Review `jhacksman/librarian` for reusable ingestion/recovery/source-tracing concepts | P1 | — | Short findings note | | — | pending | |
 | RT-011 | Original fixture corpus + ground truth + harness (M2) | P0 | — | Corpus generated deterministically by script; ground-truth manifest; harness runs | | — | pending | |
 | RT-012 | Request authorization for BLK-001/BLK-002 (vendor forms) | P0 | — | Jack's yes/no recorded | | — | blocked | asked in thread; continue docs work meanwhile |
-| RT-013 | Final spec, architecture, dependency inventory, ordered implementation backlog, handoff (M6) | P0 | RT-005…RT-011 | Completion criteria in contract §6 met or blockers named | | — | pending | |
+| RT-013 | Final spec, architecture, dependency inventory, ordered implementation backlog, handoff (M6) | P0 | RT-005…RT-011 | Completion criteria in contract §6 met or blockers named | docs/spec/discovery-mill-spec.md, docs/handoff | PR #7 | submitted; runtime-evidence criteria blocked (BLK-001) | |
 | RT-014 | Locate Concordance 10.26 second data volume / viewer MSI; decode `.dcb` field types (static) | P2 | RT-003 | F-002 limitations closed or recorded as UNKNOWN | EV-013 | — | pending | |
 | RT-015 | Resolve LAW 7.x field type codes 8/10/11 and status-flag value semantics from Answer Center docs | P1 | RT-003 | F-003 UNKNOWNs resolved or marked | EV-002, EV-012 | — | pending | |
 
@@ -50,3 +50,14 @@ reviewed / merged / blocked / verified.
 
 - AI enrichment (summaries, classification) as an optional, clearly separated layer.
 - Hosted/multi-user review.
+
+## Specification PR map (2026-11-11)
+| Requirement group | Contract | PR |
+|---|---|---|
+| REQ-ING-* | BACKLOG seeds; F-003 data model; spec §3–4 | #2, #7 |
+| REQ-IMG-001, REQ-TXT-001, REQ-NUM-001 | docs/spec/imaging-text-contract.md | #5 |
+| REQ-EXC-001/002, REQ-QC-001..004 | docs/spec/exceptions-recovery-qc.md | #6 |
+| REQ-EXP-001..003 | docs/spec/loadfiles/dat-opt-contract.md + validator | #4 |
+| Fixtures / harness | fixtures/corpus, scripts/fixtures | #3 |
+| REQ-SCOPE-001 | docs/spec/discovery-mill-spec.md §1 | #7 |
+

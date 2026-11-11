@@ -94,3 +94,7 @@ Explicit non-goals (will be restated in `docs/spec/scope.md`):
 
 See `CHECKPOINT.md` for the exact next action and `BACKLOG.md` for per-item state.
 States are reported separately as: submitted (PR open), reviewed, merged, blocked, verified.
+
+## Status 2026-11-11 (end of research session 1)
+Submitted, none merged: PR #1 foundation → #2 installer findings; PR #3 fixtures → #4 DAT/OPT contract, #5 imaging/text contract, #6 exceptions/QC; PR #7 spec index + handoff (this). Phase state: **blocked for runtime (OBSERVED) evidence** by BLK-001 activation keys and BLK-002 ReadySuite; DOCUMENTED/OBSERVED-static tiers complete for R1 scope. See docs/spec/discovery-mill-spec.md §9.
+
