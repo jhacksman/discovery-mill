@@ -24,6 +24,8 @@ reviewed / merged / blocked / verified.
 | RT-011 | Original fixture corpus + ground truth + harness (M2) | P0 | — | Corpus generated deterministically by script; ground-truth manifest; harness runs | | — | pending | |
 | RT-012 | Request authorization for BLK-001/BLK-002 (vendor forms) | P0 | — | Jack's yes/no recorded | | — | blocked | asked in thread; continue docs work meanwhile |
 | RT-013 | Final spec, architecture, dependency inventory, ordered implementation backlog, handoff (M6) | P0 | RT-005…RT-011 | Completion criteria in contract §6 met or blockers named | | — | pending | |
+| RT-014 | Locate Concordance 10.26 second data volume / viewer MSI; decode `.dcb` field types (static) | P2 | RT-003 | F-002 limitations closed or recorded as UNKNOWN | EV-013 | — | pending | |
+| RT-015 | Resolve LAW 7.x field type codes 8/10/11 and status-flag value semantics from Answer Center docs | P1 | RT-003 | F-003 UNKNOWNs resolved or marked | EV-002, EV-012 | — | pending | |
 
 ## Requirements (seed; refined by later PRs)
 
@@ -32,12 +34,12 @@ reviewed / merged / blocked / verified.
 | REQ-ING-001 | Create a case with custodians and sources; every imported item records source path, custodian, import session, and a stable internal identifier | P0 | — | TBD | UNKNOWN | RQ-I01 | pending |
 | REQ-ING-002 | Preserve original bytes read-only; record SHA-256 (and MD5 where interoperability requires) at import; never mutate originals | P0 | — | TBD | PROPOSED | RQ-I02 | pending |
 | REQ-ING-003 | Expand ZIP, EML, MSG with attachment relationships retained (parent/child, family range) | P0 | — | TBD | UNKNOWN | RQ-I03 | pending |
-| REQ-ING-004 | Identify file types by content, not extension; extract a defined metadata field set with declared types and original-value preservation | P0 | — | TBD | UNKNOWN | RQ-I04/I05 | pending |
-| REQ-ING-005 | Deduplicate with configurable scope while retaining every source/custodian occurrence | P0 | REQ-ING-002 | TBD | UNKNOWN | RQ-I06 | pending |
+| REQ-ING-004 | Identify file types by content, not extension; extract a defined metadata field set with declared types and original-value preservation | P0 | — | TBD | OBSERVED (ref. model: F-003 — content-based file id, declared field types, split date/time + timezone id) | RQ-I04/I05 | pending |
+| REQ-ING-005 | Deduplicate with configurable scope while retaining every source/custodian occurrence | P0 | REQ-ING-002 | TBD | OBSERVED (ref. model: F-003 — MD5+SHA-1, dup method/id, duplicate custodian+path retained) | RQ-I06 | pending |
 | REQ-IMG-001 | Render supported types to page images with configurable resolution/color/compression; record renderer, settings, and per-page provenance | P0 | — | TBD | UNKNOWN | RQ-T02/T03 | pending |
-| REQ-TXT-001 | Produce document text with a precedence policy (native → rendered → OCR) and record which source produced each text | P0 | REQ-IMG-001 | TBD | UNKNOWN | RQ-T04 | pending |
+| REQ-TXT-001 | Produce document text with a precedence policy (native → rendered → OCR) and record which source produced each text | P0 | REQ-IMG-001 | TBD | OBSERVED (ref. model: F-003 — distinct extracted-text vs printed-text vs OCR status) | RQ-T04 | pending |
 | REQ-NUM-001 | Number pages/documents with a configurable prefix/padding scheme; detect collisions before endorsement | P0 | REQ-IMG-001 | TBD | UNKNOWN | RQ-T05/P02 | pending |
-| REQ-EXC-001 | Every failed or partial item has an explicit exception record with cause class and remediation state; no silent drops | P0 | — | TBD | UNKNOWN | RQ-E01 | pending |
+| REQ-EXC-001 | Every failed or partial item has an explicit exception record with cause class and remediation state; no silent drops | P0 | — | TBD | OBSERVED (ref. model: F-003 — per-document error/previous-error + per-stage status flags) | RQ-E01 | pending |
 | REQ-EXC-002 | Imports and batch jobs are cancellable and resumable; reprocessing preserves document identity and history | P0 | REQ-EXC-001 | TBD | UNKNOWN | RQ-E02/E03 | pending |
 | REQ-EXP-001 | Export production sets (images, text, natives, metadata) with Concordance DAT and Opticon OPT load files conforming to the documented contracts | P0 | REQ-NUM-001 | TBD | UNKNOWN | RQ-P03/P04 | pending |
 | REQ-EXP-002 | Pre-export validation: every referenced image/text/native exists, counts agree, numbering is unique and contiguous; actionable report | P0 | REQ-EXP-001 | TBD | UNKNOWN | RQ-P06 | pending |
