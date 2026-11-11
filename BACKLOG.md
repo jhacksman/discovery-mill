@@ -25,7 +25,7 @@ reviewed / merged / blocked / verified.
 | RT-012 | Request authorization for BLK-001/BLK-002 (vendor forms) | P0 | — | Jack's yes/no recorded | | — | blocked | asked in thread; continue docs work meanwhile |
 | RT-013 | Final spec, architecture, dependency inventory, ordered implementation backlog, handoff (M6) | P0 | RT-005…RT-011 | Completion criteria in contract §6 met or blockers named | docs/spec/discovery-mill-spec.md, docs/handoff | PR #7 | submitted; runtime-evidence criteria blocked (BLK-001) | |
 | RT-014 | Locate Concordance 10.26 second data volume / viewer MSI; decode `.dcb` field types (static) | P2 | RT-003 | F-002 limitations closed or recorded as UNKNOWN | EV-013 | — | pending | |
-| RT-015 | Resolve LAW 7.x field type codes 8/10/11 and status-flag value semantics from Answer Center docs | P1 | RT-003 | F-003 UNKNOWNs resolved or marked | EV-002, EV-012 | — | pending | |
+| RT-015 | Resolve LAW 7.x field type codes 8/10/11 and status-flag value semantics from Answer Center docs | P1 | RT-003 | F-003 UNKNOWNs resolved or marked | EV-012, EV-015 | PR #2/#7 | partially resolved: 11=BigInt (DOCUMENTED), 8=Text family (DOCUMENTED), 10 reference-id UNKNOWN; OCR/TextX/TextP status letters DOCUMENTED (imaging contract T2) | remaining: code 10, DupStatus letters |
 
 ## Requirements (seed; refined by later PRs)
 
