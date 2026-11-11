@@ -1,0 +1,11 @@
+# Acquisition, vendor binaries, raw analysis output, and other non-public material live
+# OUTSIDE this repository (see docs/research/environment.md). Never commit them.
+private/
+acq/
+raw-analysis/
+*.exe
+*.msi
+*.dll
+*.ocx
+node_modules/
+.DS_Store
