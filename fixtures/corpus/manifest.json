@@ -1,0 +1,198 @@
+{
+ "fixture_set": "dm-corpus",
+ "items": [
+  {
+   "contains_duplicate_of": "loose/pdf/text-3pages.pdf",
+   "contains_empty": true,
+   "entries": 5,
+   "kind": "zip",
+   "nested_zip": true,
+   "path": "containers/nested-outer.zip",
+   "sha256": "1b879eaa9b12d788bd95db1d2c6fede89a03abe2ac0938fa264d09b64a6f4b63",
+   "size": 2012
+  },
+  {
+   "custodian": "avery",
+   "dup_group": "DUP-001",
+   "kind": "pdf",
+   "path": "custodians/avery/report.pdf",
+   "sha256": "36e43c8f22ae2aa4c0eda9f9bb47758130e50b4ff40d46546a00153a8c61ad73",
+   "size": 826
+  },
+  {
+   "custodian": "blake",
+   "dup_group": "DUP-001",
+   "kind": "pdf",
+   "path": "custodians/blake/Report (1).pdf",
+   "sha256": "36e43c8f22ae2aa4c0eda9f9bb47758130e50b4ff40d46546a00153a8c61ad73",
+   "size": 826
+  },
+  {
+   "custodian": "blake",
+   "dup_group": null,
+   "kind": "pdf",
+   "near_dup_of": "DUP-001",
+   "path": "custodians/blake/report-modified.pdf",
+   "sha256": "3e77686cc13ffce908706706f919a308615c2736c251338c9ab9174c6c73df67",
+   "size": 849
+  },
+  {
+   "attachments": [
+    "Q3-figures.pdf",
+    "notes — final.docx"
+   ],
+   "family": "FAM-001",
+   "kind": "eml",
+   "path": "email/parent-with-2-attachments.eml",
+   "role": "parent",
+   "sent": "2023-11-14T22:13:20+00:00",
+   "sha256": "234e7cf5e15c26bb0c5c71c987ccbd6a89d1aafcf1497ca45c5a05d8faf9f800",
+   "size": 4127
+  },
+  {
+   "attachments": [],
+   "family": "FAM-002",
+   "in_reply_to": "<parent-0001@fixture.example>",
+   "kind": "eml",
+   "path": "email/reply-no-attachments.eml",
+   "role": "parent",
+   "sent": "2023-11-15T09:05:00-05:00",
+   "sha256": "44ecdb5cfa4cfc8212cc7b9ad751dee29db507d83639eb6a866f3cd17ce79726",
+   "size": 384
+  },
+  {
+   "corrupt": "truncated",
+   "expect": "exception: unreadable or partial",
+   "kind": "pdf",
+   "path": "exceptions/corrupt-truncated.pdf",
+   "sha256": "a269be8d0e364fd5dad0b32c91fe475ae42bf9a7a57a1fa9307e30419bbbea1a",
+   "size": 300
+  },
+  {
+   "kind": "zip",
+   "note": "placeholder; password-protected archives are produced by scripts/fixtures/make_encrypted.sh (needs zip CLI)",
+   "path": "exceptions/encrypted-placeholder.zip",
+   "sha256": "106e9136c04d2c532fa7cfa0e2ec5d3686cefd4f3ad830a14363e5c38767ef46",
+   "size": 175
+  },
+  {
+   "declared_ext": "pdf",
+   "expect": "identified by content as PNG; SuspectExt-style flag",
+   "kind": "png",
+   "path": "exceptions/wrong-extension-is-png.pdf",
+   "sha256": "c9192023d078237cb491413e553ae9fa5de263f1f666aa14d1a9713e64928213",
+   "size": 1455
+  },
+  {
+   "corrupt": "empty",
+   "expect": "exception: empty file",
+   "kind": "pdf",
+   "path": "exceptions/zero-byte.pdf",
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "size": 0
+  },
+  {
+   "kind": "jpeg",
+   "pages": 1,
+   "path": "loose/images/photo-façade-ÄÖÜ.jpg",
+   "sha256": "b5a94f72562966df6b7cf2817b78ad8406aa9f43e98eb0241317dbee7e8c0464",
+   "size": 29545
+  },
+  {
+   "kind": "png",
+   "pages": 1,
+   "path": "loose/images/диаграмма-図-🙂.png",
+   "sha256": "efdfc9a748eb179de75df3015403aff763569624fa3cdfb086d209b132130cd3",
+   "size": 5888
+  },
+  {
+   "expected_text_contains": [
+    "Widget",
+    "35.50"
+   ],
+   "expected_text_hidden": [
+    "HIDDEN SHEET VALUE",
+    "OUTSIDE PRINT AREA"
+   ],
+   "has_hidden_sheet": true,
+   "kind": "xlsx",
+   "path": "loose/office/ledger-hidden-sheet-print-area.xlsx",
+   "print_area": "Ledger!A1:C4",
+   "sha256": "8c589a6799bfef310a18559f57216ba357764aae03b341debc603ccbb448f6b7",
+   "size": 2035
+  },
+  {
+   "expected_text_contains": [
+    "Memo to file",
+    "café",
+    "日本語"
+   ],
+   "has_comments": true,
+   "has_hidden_text": true,
+   "kind": "docx",
+   "pages_expected_min": 1,
+   "path": "loose/office/memo-with-comment-and-hidden.docx",
+   "sha256": "c524c939cd2bb6a74019f351ec694376a091cd4411c170fe5cdc4b57d5a2f104",
+   "size": 2169
+  },
+  {
+   "expected_text": [
+    "SCANNED PAGE ONE OCR TARGET 48213",
+    "SCANNED PAGE TWO OCR TARGET 90377"
+   ],
+   "kind": "pdf",
+   "pages": 2,
+   "path": "loose/pdf/image-only-2pages.pdf",
+   "sha256": "4c76e397cc7d36d8ea1fea7dd99a07fdf59920b0bfd6c8cc3d92d6ee7d679dab",
+   "size": 61948,
+   "text_source": "ocr"
+  },
+  {
+   "expected_text": [
+    "MIXED PDF page one is native text Token: MIXED-7781",
+    "SCANNED PAGE ONE OCR TARGET 48213"
+   ],
+   "kind": "pdf",
+   "pages": 2,
+   "path": "loose/pdf/mixed-text-image.pdf",
+   "sha256": "ecc1f026ed9625e25842dc0b3912037e4c42acc5745b67d1846df1141f809468",
+   "size": 31537,
+   "text_source": "per-page"
+  },
+  {
+   "expected_text": [
+    "Discovery Mill fixture PDF-TEXT-001 Page 1 of 3 The quick brown fox jumps over the lazy dog.",
+    "Page 2 of 3 Invoice total: 1,234.56 Reference: DM-FIX-0001",
+    "Page 3 of 3 End of document."
+   ],
+   "kind": "pdf",
+   "pages": 3,
+   "path": "loose/pdf/text-3pages.pdf",
+   "sha256": "2a64cbfbec7b475b98ac5b1933d5f6ccba9df4c99b77fcf0282c402a3efc3f62",
+   "size": 1519,
+   "text_source": "native"
+  },
+  {
+   "bits": 1,
+   "compression": "group4",
+   "kind": "tiff",
+   "pages": 4,
+   "path": "loose/tiff/multipage-g4-4pages.tif",
+   "rotated_pages": [
+    3
+   ],
+   "sha256": "6f4c86f177bcb4dc3b80dc04156a97d35186c35aec6f4a8749d24be43eaa60d6",
+   "size": 8992
+  },
+  {
+   "bits": 24,
+   "compression": "lzw",
+   "kind": "tiff",
+   "pages": 1,
+   "path": "loose/tiff/single-color-lzw.tif",
+   "sha256": "6f6994192572328cb7a08b2719b14a8432c1644dc171eba26898118cba6988cb",
+   "size": 92130
+  }
+ ],
+ "version": 1
+}
