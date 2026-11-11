@@ -17,3 +17,8 @@ published.
 | EV-008 | Vendor web page | KLDiscovery ReadySuite download page (version, release date, access conditions) | ART-103 | yes | Captured text 2026-11-11 |
 | EV-009 | Tool provenance | REA `rea-agents@6.8.0` npm metadata and `rea doctor --json` output | — | yes | See `environment.md` |
 | EV-010 | Vendor product sheets | LAW / EDA+LAW product sheets | ART-003/004 | yes | Marketing-level; used only for scope context |
+| EV-011 | Static artifact inspection | LAW 7.14.290 installer: bundle manifest, MSI payload inventory, PE version resources, Authenticode chain | ART-110 | hashes yes; raw listings private | Findings F-001, F-003; no execution |
+| EV-012 | Static artifact inspection | LAW 7.14 schema-manager assembly: embedded case-schema resources (entity/field names only published) | ART-110 | private | Finding F-003; script text not published |
+| EV-013 | Static artifact inspection | Concordance 10.26.1.153 setup: extracted component list, sample database file set, shipped field templates | ART-111 | private | Finding F-002; 17/364 entries not extracted |
+| EV-014 | Static artifact inspection | Concordance Desktop 1.9.1.6 / FYI Reviewer 5.19.0.40: hashes and signer metadata only | ART-112/113 | private | Low relevance; not analysed further |
+

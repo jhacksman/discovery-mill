@@ -4,7 +4,7 @@ Updated: 2026-11-11 (session 1). Read `PROGRAM.md` then `BACKLOG.md` before acti
 
 ## State
 
-- Branch/PR: research-foundation PR (M0) submitted; nothing merged yet.
+- Branch/PR: PR #1 `devin/1794403948-research-foundation` (M0) submitted, not merged. PR 2 `devin/1794403948-installer-findings` (stacked on PR #1) adds findings F-001..F-003 + EV-011..014. Nothing merged yet.
 - Private workspace on the research machine: `~/discovery-mill-private/` (REA env, PDFs,
   Answer Center mirrors). If the machine is gone, rebuild with
   `scripts/research/fetch-public-docs.sh` and the wget commands in
